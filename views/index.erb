@@ -1,1 +1,30 @@
-This exists
+The Holidays for this month are:
+<br>
+<br>
+
+<% @holidays.each do |holiday| %>
+<table>
+  <td><%= holiday[0]["date"] %></td>
+  <td></td>
+  <td><%= holiday[0]["name"] %></td>
+</table>
+<% end %>
+<br>
+<br>
+<br>
+
+The Holidays during the month of my birth were:
+<br><br>
+<% @birthHolidays.each do |holiday| %>
+<table>
+  <td><%= holiday[0]["date"] %></td>
+  <td></td>
+  <td><%= holiday[0]["name"] %></td>
+</table>
+<% end %>
+
+<% @pictures.each do |pic| %>
+  <a href="<%= pic.source_url %>" title="This cat with a hat is brought to you by The Cat API">
+    <img src="<%= pic.url %>" />
+  </a>
+<% end %>
