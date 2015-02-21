@@ -3,4 +3,3 @@ ruby '2.2.0'
 
 gem 'sinatra', '~> 1.4.5'
 gem 'holidapi'
-gem 'cat_api'
