@@ -51,6 +51,7 @@
 
 
 <div class="col-md-6">
+  <% if @holidays.any? %>
 
   <h1>The Holidays for <%= params[:month] %>, <%= params[:year] %> are:</h1>
     
@@ -75,4 +76,7 @@
 
   </table>
 </div>
+
+<% else %>
+<% end %>
 
