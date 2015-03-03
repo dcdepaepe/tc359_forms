@@ -3,10 +3,7 @@ require 'holidapi'
 
 class MyWebApp < Sinatra::Base
   get '/' do
-
-  	@holidays = HolidApi.get(params)
-
+    @holidays = HolidApi.get(params)
     erb :index
-  
   end
 end
